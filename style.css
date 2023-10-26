@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 62.5%;
+    background-color: #48FFFF;
+}
+
+.main{
+    height: 100%;
+    height: fit-content;
+    width: 100%;
+    background-image: url(Untitled.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    padding: 20px;
+    position: relative;
+}
+.topimg{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+.topimg img{
+    width: 35rem;
+    height: 10rem;
+}
+
+.container{
+    width: 100%;
+    min-height: 70vh;
+    height: fit-content;
+    margin-top: 5rem;
+    padding: 50px;
+}
+
+.upper{
+    min-height: 400px;
+    height: fit-content;
+    max-width: 800px;
+    font-size: 2.4rem;
+    padding: 5rem;
+    border: 5px solid aqua;
+    backdrop-filter: blur(2px);
+}
+.upper label{
+    color: aqua;
+    font-weight: 500;
+}
+.upper input{
+    background-color: rgb(61, 228, 240);
+    color: black;
+    font-weight: 650;
+    border: 1px solid aqua;
+    height: 3rem;
+    padding: 5px;
+    width: 20rem;
+    border-radius: 6px;
+}
+
+.upper select{
+    background-color: aqua;
+    color: black;
+    padding: 3px 6px;
+    border: 1px solid aqua;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+.upper button{
+    height: 5rem;
+    width: 9rem;
+    border-radius: 30%;
+    padding: 6px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid aqua;
+    margin-left: 20px;
+    color: aqua;
+    font-size: 1.8rem;
+    font-weight: 600;
+    box-shadow: 7px 7px 5px black;
+    cursor: pointer;
+}
+/* .upper button:hover{
+    background-color: red;
+    color: green;
+} */
+.lower{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 50px;
+}
+
+.result{
+    height: fit-content;
+    width: fit-content;
+    border-radius: 0 25px 25px 0;
+    padding: 2px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.result h3{
+    font-family: cursive;
+    color: black;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.result div{
+    height: fit-content;
+    background-color: aquamarine;
+    color: black;
+    min-width: 10rem;
+    width: fit-content;
+    display: inline;
+    padding: 5px;
+    text-align: center;
+    border-radius: 0 25px 25px 0;
+    box-shadow: 2px 2px 2px black;
+}
+
+@media (max-width: 650px) {
+    html{
+        font-size: 55%;
+    }
+    .topimg{
+        gap:0;
+        line-height: 1;
+    }
+    .upper label{
+        margin-bottom: 5px;
+    }
+    .upper input{
+        margin-top: 5px;
+    }
+    .upper select{
+        margin-top: 5px;
+    }
+    .upper button{
+        margin-top: 5px;
+    }
+    .container{
+        margin-top: 0;
+        padding: 10px;
+    }
+    .upper{
+        width: 100%;
+    }
+    
+}
